@@ -1,5 +1,5 @@
-
-
+import react = require("react");
+import $ = require("jquery");
 interface ClockInterface{
 	currentTime: Date;
 }
@@ -16,4 +16,14 @@ class Clock implements ClockInterface{
 }
 var clock = new Clock();
 clock.move();
-console.log($)
+console.log($);
+$.ajax({
+	url: 'typings.json',
+	success: function() {
+		console.log('success')
+	},
+	error: function() {
+		console.log('error')
+	}
+})
+

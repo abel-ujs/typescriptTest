@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
-        "module": "umd",
+        "module": "commonjs",
         "target": "es5",
         "noImplicitAny": false,
-        "sourceMap": true,
-        "outDir": "disk"
-
+        "sourceMap": true
     },
     "exclude": [
         "node_modules"
